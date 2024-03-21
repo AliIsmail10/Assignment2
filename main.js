@@ -9,3 +9,24 @@ $(document).ready(function () {
     }
   });
 });
+$(function () {
+  (function rotateImage() {
+    $(".parent-color img").animate(
+      {
+        rotate: "0deg",
+      },
+      1000,
+      function () {
+        $(this).animate(
+          {
+            rotate: "360deg",
+          },
+          1000,
+          function () {
+            rotateImage();
+          }
+        );
+      }
+    );
+  })();
+});

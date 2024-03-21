@@ -46,6 +46,7 @@ hr {
   position: fixed;
   background-color: #eee;
   width: 100%;
+  z-index: 1;
 }
 .my-name {
   display: inline;
@@ -63,7 +64,7 @@ span img {
 }
 
 .nav ul li {
-  display: inline-block;
+  float: left;
 }
 
 .nav ul li a:hover {
